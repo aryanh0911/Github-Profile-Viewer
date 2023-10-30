@@ -19,10 +19,31 @@ html, body{
     box-shadow: 0 0 5px rgba(71, 70, 70, 0.32);
 }
 
-#header{
+/* #header{
     margin-bottom: 18px;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.692);
+} */
+
+#header {
+    margin-bottom: 28px;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #6b11cbb2, #2574fcb7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    animation: changeColor 1.5s infinite alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #6b11cbb2;
+    }
+    100% {
+        color: #2574fcb7;
+    }
 }
 
 .ri-github-fill{
