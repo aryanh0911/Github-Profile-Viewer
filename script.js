@@ -1,4 +1,4 @@
-// GSAP ANIMATIONS
+// GSAP ANIMATIONS ---
 
 let tl = gsap.timeline()
 
@@ -74,6 +74,11 @@ function  searchUser(){
 
 
 
+
+
+
+
+
 function displayProfile(user){
     let profile = document.querySelector("#profile")
     let userName = document.querySelector("#userName").value
@@ -103,8 +108,10 @@ function displayProfile(user){
 
 
 
-    // ------------------------------------------------
-    // Profile GSAP Animations
+
+    
+    // Profile GSAP Animations ---
+    
     let tl = gsap.timeline()
 
     tl.from("#profile", {
@@ -140,7 +147,9 @@ function displayProfile(user){
     
 
 
-    // Profile Link Hover
+
+    
+    // Profile Link Hover ---
 
     let profileLink = document.querySelector("#profileLink")
     
