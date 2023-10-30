@@ -1,3 +1,4 @@
+// GSAP ANIMATIONS
 
 let tl = gsap.timeline()
 
@@ -17,13 +18,16 @@ tl.from("#searchContainer, #searchBtn", {
 
 
 
+
+
+
+
 function searchUser(){
     
     let searchBtn = document.querySelector("#searchBtn")
     let userName = document.querySelector("#userName").value
     let profile = document.querySelector("#profile")
     let errorText = document.querySelector("#errorText")
-    let token = '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'
 
     profile.innerHTML = ''
     userName.textContent = ''
@@ -31,7 +35,7 @@ function searchUser(){
 
     fetch(`https://api.github.com/users/${userName}`, {
         headers: {
-            Authorization: `token ${token}`,
+            // Authorization: `token ${token}`,
             // userAgent: 'request'
         }
     })
