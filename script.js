@@ -5,6 +5,7 @@ let tl = gsap.timeline()
 tl.from("#header", {
     y: 12,
     opacity: 0,
+    delay: .5,
     // stagger: 1,
     // duration: 1,
 })
@@ -22,7 +23,7 @@ tl.from("#searchContainer, #searchBtn", {
 
 
 
-function searchUser(){
+function  searchUser(){
     
     let searchBtn = document.querySelector("#searchBtn")
     let userName = document.querySelector("#userName").value
