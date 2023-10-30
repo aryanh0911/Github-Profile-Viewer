@@ -92,7 +92,7 @@ function displayProfile(user){
         <p><span>Repositories:</span> ${user.repos}</p>
         <p><span>Followers:</span> ${user.followers}</p>
         <p><span>Following:</span> ${user.following}</p>
-        <a href="${user.accountURL}" target="_blank">View Github Account <i class="ri-external-link-line"></i></a>
+        <a href="${user.accountURL}" target="_blank" id="profileLink">View Github Account <i class="ri-external-link-line"></i></a>
 
     
     `;
@@ -135,5 +135,20 @@ function displayProfile(user){
     tl.from("#errorText",{
         y:20,
         opacity: 0,
+    })
+    
+    
+
+
+    // Profile Link Hover
+
+    let profileLink = document.querySelector("#profileLink")
+    
+    profileLink.addEventListener("mouseover", function(){
+        profileLink.style.color = "blue"
+    })
+    
+    profileLink.addEventListener("mouseout", function(){
+        profileLink.style.color = "rgb(21, 131, 168)"
     })
 }

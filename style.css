@@ -92,7 +92,7 @@ input[type="text"] {
 }
 
 #profile a{
-    display: block;
+    display: inline-block;
     margin-top: 20px;
     text-decoration: none;
     color: rgb(21, 131, 168);
